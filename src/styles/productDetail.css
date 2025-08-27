@@ -1,0 +1,144 @@
+.product-detail-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.product-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.product-images {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 50vw;
+}
+
+.main-image img {
+  width: 100%;
+  border: 2px solid #52796f;
+  border-radius: 10px;
+  object-fit: contain;
+  max-height: 600px;
+  background: #f4faff;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.thumbnail:hover,
+.thumbnail.selected {
+  border: 2px solid #52796f;
+}
+
+.product-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: left;
+}
+
+.product-details h1 {
+  color: #52796f;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #444;
+}
+
+.product-meta {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  background-color: #f4faff;
+  padding: 10px;
+  border-radius: 6px;
+  color: #333;
+}
+
+.product-meta p {
+  margin: 4px 0;
+}
+
+
+
+.product-price {
+  font-size: 1.5rem;
+  color: #b12704;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  margin-top: auto;
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-to-cart button {
+  background-color: #52796f;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart button:hover {
+  background-color: #3e6159;
+}
+
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+  }
+
+  .thumbnails {
+    justify-content: center;
+  }
+
+  .product-details {
+    padding-top: 20px;
+  }
+
+  .add-to-cart button {
+    width: 100%;
+  }
+}

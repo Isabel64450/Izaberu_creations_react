@@ -1,0 +1,143 @@
+.registration-container {
+
+max-width: 1000px;
+width: 100%;
+height: auto;
+margin: 80px auto;
+background: white;
+display: flex;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+font-family: sans-serif;
+}
+
+.form-box {
+  display: flex;
+  width: 100%;
+}
+
+
+.left-side {
+  flex: 1.5;
+  background: #f4faff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-photo .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #52796f;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.left-side .description {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.illustration img {
+  max-height: 200px;
+  object-fit: contain;
+  margin-top: 30px;
+}
+
+
+.right-side {
+  flex: 2.8;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side h1 {
+  color: #52796f;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+}
+.right-side h2{
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.name-row input {
+  flex: 1;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.bouttons-rows {
+  display: flex;
+  gap: 10px;
+}
+
+.bouttons-rows button {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #52796f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bouttons-rows button:hover {
+  background-color: #3e6159;
+}
+
+
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+
+  .left-side {
+    padding: 20px;
+  }
+
+  .right-side {
+    padding: 20px;
+  }
+
+  .name-row {
+    flex-direction: column;
+  }
+
+  .bouttons-rows {
+    flex-direction: column;
+  }
+}
