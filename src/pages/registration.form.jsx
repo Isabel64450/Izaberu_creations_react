@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
-import abyssin from '../images/abyssin.png'
+import abyssin from '../images/Abyssin.png'
 import '../styles/formulaires.css'
 import axiosInstance from '../api/axiosInstance.js'
 const registrationForm = () => {
