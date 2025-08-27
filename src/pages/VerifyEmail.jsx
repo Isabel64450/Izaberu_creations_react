@@ -13,7 +13,7 @@ const VerifyEmailPage = () => {
     console.log("Token récupéré depuis l'URL:", token);
     const verify = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.PORT_BACK}/users/verify/${token}`);
+        const res = await axios.get(`${import.meta.env.VITE_PORT_BACK}/users/verify/${token}`);
         setMessage(res.data.message || "Votre compte a été vérifié avec succès.");
         setSuccess(true);
         setTimeout(() => navigate("/login"), 3000);  

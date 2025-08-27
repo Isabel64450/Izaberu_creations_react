@@ -1,6 +1,6 @@
 import axios from "axios"
 const axiosInstance =axios.create({
-    baseURL: import.meta.env.PORT_BACK,
+    baseURL: import.meta.env.VITE_PORT_BACK,
     withCredentials: true,
 })
 
